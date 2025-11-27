@@ -1,34 +1,15 @@
-# -----------------------------------------------------------------------------
-# 1. Environment and Configuration
-# -----------------------------------------------------------------------------
 
-# Environment variables (sensitive data like passwords)
 .env
 *.ini
 *.cfg
 *.toml
 
-# -----------------------------------------------------------------------------
-# 2. Database and Data Storage
-# -----------------------------------------------------------------------------
 
-# PostgreSQL/SQLAlchemy
-# Files created by the database engine/driver (if any, typically not common)
-
-# Local data files (CSV, Parquet, etc. that are too large or should not be tracked)
-# The original CSV file is often tracked, but large/temp files should be ignored.
-# intel-amd_processors_100k.csv  <-- Uncomment this if the CSV is too large/should NOT be tracked
-
-# -----------------------------------------------------------------------------
-# 3. Python Artifacts
-# -----------------------------------------------------------------------------
-
-# Byte-compiled / optimized / setuptools stuff
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Distribution / packaging
+
 .Python
 build/
 develop-eggs/
@@ -46,32 +27,13 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Environments
 .venv/
 venv/
 env/
 /venv/
 /env/
 /build/
-
-# IDEs (Integrated Development Environments)
-.vscode/          # VS Code files (excluding settings.json)
-.idea/            # JetBrains IDEs (PyCharm, IntelliJ)
-
-# Jupyter Notebook Files
+        
 .ipynb_checkpoints
 
-# -----------------------------------------------------------------------------
-# 4. Critical Credentials (Based on your project)
-# -----------------------------------------------------------------------------
-
-# Google Sheets / gspread credentials (OAuth User Credentials)
-# This file stores the user's refresh/access tokens after first successful login.
-authorized_user.json
-
-# Google Sheets / gspread credentials (Client ID/Secret)
-# This is the file that contains client_id and client_secret.
-gspread_credentials.json
-
-# If you use a Service Account instead of OAuth (e.g., for automated servers)
-google_service_account.json
+ServiceAccountCredentials.json
